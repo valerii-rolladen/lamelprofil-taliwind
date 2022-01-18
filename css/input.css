@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+/* HEADERS */
+@layer base {
+	h1 {
+		@apply text-2xl uppercase font-bold py-5 mb-5;
+	}
+	h3 {
+		@apply text-xl uppercase font-bold mb-4;
+	}
+	/* DEFAULT TEXT */
+	p {
+		@apply mb-2;
+	}
+}
+@layer components {
+	/* LIST ITEMS */
+	ul li {
+		@apply relative h-20 flex justify-center items-center text-center;
+	}
+	ul li small {
+		@apply uppercase font-bold text-blue-500/75 absolute top-2 left-2;
+	}
+}
+@tailwind utilities;
